@@ -1,5 +1,5 @@
 ## Coding Challenge
-Welcome to our coding challenge. In this challenge we are asking you to create a very simple html page that woks with a public API. 
+Welcome to our coding challenge. In this challenge we are asking you to create a very simple html page that works with a public API. 
 
 ## What do I need to do?
 The goal of the challenge is to get some data from a public API of your choosing and display it creatively on screen
