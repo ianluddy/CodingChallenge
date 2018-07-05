@@ -15,7 +15,7 @@ We look for the following things:
 
 * A working app
 * Unit tests
-* A well structured code base with modules (huge functions, methods and classes are a sign of unstructured code)
+* A well structured code base with modules (huge functions, massive methods and really long classes are a sign of unstructured code)
 * Some creativity in the final app (i.e. colours, styling, look and feel, etc.)
 * A README file that explains any steps needed to get your app up and running
 
