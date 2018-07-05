@@ -1,3 +1,4 @@
+## Coding Challenge
 Welcome to our coding challenge. In this challenge we are asking you to create a very simple html page that woks with a public API. 
 
 ## What do I need to do?
