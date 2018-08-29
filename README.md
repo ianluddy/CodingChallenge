@@ -1,37 +1,66 @@
-## Coding Challenge
-Welcome to our coding challenge. In this challenge we are asking you to create a very simple html page that works with a public API. 
+# Sligo Beverage Index
 
-## What do I need to do?
-The goal of the challenge is to get some data from a public API of your choosing and display it creatively on screen
+http://livetiles.ianluddy.com/
 
-## What tech should I use?
-It can be as simple as a single HTML page with some JS on it or as complex as an ASP.Net application. The choice is yours. Use whatever technology you think is best to achieve the result and showcase your skills
+### Stack
 
-## Where can I find a public API?
-The github repo https://github.com/toddmotto/public-apis has a long list of public APIs that can be worked with across various topics. Feel free to pick any on this list or any other one that you know of.
+- Angular CLI 6.0.8
+- Angular 6.1.3
+- Node 10.0.10
+- Bootstrap 3.3.7
+- Google Places API
 
-## What do we like to see?
-We look for the following things:
+### Running Locally
 
-* A working app
-* Unit tests
-* A well structured code base with modules (huge functions, massive methods and really long classes are a sign of unstructured code)
-* Some creativity in the final app (i.e. colours, styling, look and feel, etc.)
-* A README file that explains any steps needed to get your app up and running
+Install the above dependencies
+Clone the project
+Change directory to the root of the project
+Use 'ng serve' to run locally
+Navigate to http://localhost:4200
 
-## Are there any bonus points?
-Some of the APIs are unsecured, meaning they don't require any authentication to work with them. The ones that require authentication are obviously mode difficult so more weighting is given if you choose to work with one of those
+### Deploying
 
-## How do i submit my code?
-Do a pull request against this repo with your code.
+Use 'ng build --prod' to build project for production
+Files for production can be found in the 'dist' directory
+Serve using Apache on a Linux box
 
-## Anything else?
-Please answer the following questions in a file called "question_answers"
+### Q/A
 
 1. How long did it take to complete the solution?
+
+  About 4 hours
+
 2. What would you add if you had more time?
+
+  Automated testing
+  SASS
+  A nice navbar logo
+  Pagination
+
 3. How would you deploy this to production?
+
+  Use the Angular CLI to build solution in production mode using 'ng build --prod'
+  Serve using Apache on an AWS EC2 instance
+  Configure SSL encryption
+  Configure Google Analytics
+
 4. How would you debug it in production?
+
+  Client side:
+  Load the app in Chrome
+  Check the console for errors, use debugger if necessary
+  Check network console for failing requests
+  You could also use something like Augury to debug: https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
+
+  Server side:
+  SSH onto the box
+  Check Apache error and access logs
+  Check resource levels using 'top' to identify performance/memory issues
+
 5. How would you know if it is failing at 2am?
 
-Have fun!
+  For failing processes I would use a tool like monit (https://mmonit.com/monit/) to monitor the Apache
+  processes, restart any that fail, and send an alert email.
+
+  For catching live issues I would use rollbar (https://rollbar.com/), it's very easy to
+  setup and integrates with Angular nicely.
